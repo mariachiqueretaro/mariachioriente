@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#D2B356">
   <meta name="author" content="Mariachi Querétaro de Oriente Antioqueño">
   <meta name="description"
     content="Mariachis en Oriente Antioqueño: Serenatas, música tradicional y eventos especiales. Contrata nuestras serenatas en el Oriente Antioqueño, Colombia." />
@@ -12,13 +13,20 @@
   <meta name="language" content="es" />
   <meta name="robots" content="index, follow">
 
+  <!-- Alternate language -->
+  <link rel="alternate" hreflang="es" href="https://mariachiqueretaro.github.io/mariachioriente/">
+
+  <!-- Preload critical CSS -->
+  <link rel="preload" href="assets/css/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </noscript>
 
   <!--========= Open Graph / Facebook ==========-->
   <meta property="og:title" content="Mariachi Querétaro de Oriente Antioqueño | Serenatas y Música Tradicional" />
   <meta property="og:description"
     content="Contrata serenatas en el Oriente Antioqueño: cumpleaños, amor, eventos especiales. Música tradicional, calidad y emoción." />
-  <meta property="og:image"
-    content="https://mariachiqueretaro.github.io/mariachioriente/assets/img/mariachi.png" />
+  <meta property="og:image" content="https://mariachiqueretaro.github.io/mariachioriente/assets/img/mariachi.png" />
   <meta property="og:url" content="https://mariachiqueretaro.github.io/mariachioriente/" />
   <meta property="og:type" content="website" />
 
@@ -27,8 +35,7 @@
   <meta name="twitter:title" content="Mariachi Querétaro de Oriente Antioqueño | Serenatas y Música Tradicional" />
   <meta name="twitter:description"
     content="Serenatas en el Oriente Antioqueño: música tradicional, cumpleaños, amor y más." />
-  <meta name="twitter:image"
-    content="https://mariachiqueretaro.github.io/mariachioriente/assets/img/mariachi.png" />
+  <meta name="twitter:image" content="https://mariachiqueretaro.github.io/mariachioriente/assets/img/mariachi.png" />
 
   <!-- Canonical -->
   <link rel="canonical" href="https://mariachiqueretaro.github.io/mariachioriente/" />
@@ -36,8 +43,7 @@
   <!--========== BOX ICONS ==========-->
   <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-  <!--========== CSS ==========-->
-  <link rel="stylesheet" href="assets/css/styles.css">
+
 
   <!-- <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon"> -->
 
@@ -45,6 +51,8 @@
 </head>
 
 <body>
+  <!-- Skip to main content for accessibility -->
+  <a href="#main-content" class="skip-link" aria-label="Saltar al contenido">Saltar al contenido</a>
 
   <!-- Marcado de datos estructurados Schema.org LocalBusiness -->
   <script type="application/ld+json">
@@ -60,7 +68,7 @@
 			"addressCountry": "CO",
 			"postalCode": "054020"
 		  },
-		  "telephone": "+57 3225915226",
+		  "telephone": "+57 3012710046",
 		  "url": "https://mariachiqueretaro.github.io/mariachioriente/",
 		  "email": "mailto:mariachiqueretarooriente@gmail.com",
 		  "openingHours": "Mo,Tu,We,Th,Fr,Sa,Su 00:00-23:59",
@@ -74,7 +82,7 @@
   </a>
 
 
-  
+
   <!--========== HEADER ==========-->
   <header class="l-header" id="header">
     <nav class="nav bd-container">
@@ -83,8 +91,8 @@
             class='bx bxl-facebook bx-md bx-burst'></i></a>
         <a href="https://www.instagram.com/mariachiqueretaro/profilecard/" class="footer__social"><i
             class='bx bxl-instagram bx-md bx-burst'></i></a>
-        <a href="https://wa.me/573012710046?text=Hola,%20me%20gustaría%20obtener%20información%20sobre%20sus%20servicios%20de%20mariachi." class="footer__social"><i
-            class='bx bxl-whatsapp bx-tada bx-md bx-burst'></i></a>
+        <a href="https://wa.me/573012710046?text=Hola,%20me%20gustaría%20obtener%20información%20sobre%20sus%20servicios%20de%20mariachi."
+          class="footer__social"><i class='bx bxl-whatsapp bx-tada bx-md bx-burst'></i></a>
       </div>
 
       <div class="nav__menu" id="nav-menu">
@@ -112,13 +120,15 @@
           <h1 class="home__title">Mariachi Querétaro</h1>
           <h2 class="home__subtitle">Vive la magia del Mariachi en el oriente antioqueño</h2>
           <div class="contact__button">
-            <a href="https://wa.me/573012710046?text=Hola,%20me%20gustaría%20obtener%20información%20sobre%20sus%20servicios%20de%20mariachi." target="_blank" class="button">
+            <a href="https://wa.me/573012710046?text=Hola,%20me%20gustaría%20obtener%20información%20sobre%20sus%20servicios%20de%20mariachi."
+              target="_blank" class="button">
               <i class='bx bxl-whatsapp bx-tada bx-tada'></i> Escríbenos por WhatsApp
             </a>
           </div>
         </div>
 
-        <img src="assets/img/mariachi.png" alt="Mariachi Querétaro en Oriente Antioqueño tocando serenatas" class="home__img">
+        <img src="assets/img/mariachi.png" alt="Mariachi Querétaro en Oriente Antioqueño tocando serenatas"
+          class="home__img">
       </div>
     </section>
 
@@ -134,13 +144,15 @@
             Rionegro, Llanogrande, Marinilla, Santuario, El Carmen de Viboral, La Ceja, El Retiro, El Peñol,
             Guatapé, San Rafael, Cocorná, Guarne y mas.</p>
           <div class="contact__button">
-            <a href="https://wa.me/573012710046?text=Hola,%20me%20gustaría%20obtener%20información%20sobre%20sus%20servicios%20de%20mariachi." target="_blank" class="button">
+            <a href="https://wa.me/573012710046?text=Hola,%20me%20gustaría%20obtener%20información%20sobre%20sus%20servicios%20de%20mariachi."
+              target="_blank" class="button">
               <i class='bx bxl-whatsapp bx-tada'></i> Escríbenos por WhatsApp
             </a>
           </div>
         </div>
 
-        <img src="assets/img/banner-image-1.png" alt="Mariachi Querétaro en Oriente Antioqueño tocando serenatas" class="about__img">
+        <img src="assets/img/banner-image-1.png" alt="Mariachi Querétaro en Oriente Antioqueño tocando serenatas"
+          class="about__img">
       </div>
     </section>
 
@@ -227,8 +239,8 @@
               class='bx bxl-facebook bx-md bx-burst'></i></a>
           <a href="https://www.instagram.com/mariachiqueretaro/profilecard/" class="footer__social"><i
               class='bx bxl-instagram bx-md bx-burst'></i></a>
-          <a href="https://wa.me/573012710046?text=Hola,%20me%20gustaría%20obtener%20información%20sobre%20sus%20servicios%20de%20mariachi." class="footer__social"><i
-              class='bx bxl-whatsapp bx-tada bx-md bx-burst'></i></a>
+          <a href="https://wa.me/573012710046?text=Hola,%20me%20gustaría%20obtener%20información%20sobre%20sus%20servicios%20de%20mariachi."
+            class="footer__social"><i class='bx bxl-whatsapp bx-tada bx-md bx-burst'></i></a>
         </div>
       </div>
     </section>
@@ -243,7 +255,8 @@
           <li>Contactanos y reserva tu fecha especial.</li>
           <li>
 
-            <a href="https://wa.me/573012710046?text=Hola,%20me%20gustaría%20obtener%20información%20sobre%20sus%20servicios%20de%20mariachi." target="_blank" class="button">
+            <a href="https://wa.me/573012710046?text=Hola,%20me%20gustaría%20obtener%20información%20sobre%20sus%20servicios%20de%20mariachi."
+              target="_blank" class="button">
               <i class='bx bxl-whatsapp bx-tada bx-md'></i>
             </a>
 
@@ -272,7 +285,7 @@
       </div>
     </div>
 
-    <p class="footer__copy">&#169; 2024 Todos los derechos reservados.</p>
+    <p class="footer__copy">&#169; 2025 Todos los derechos reservados.</p>
   </footer>
 
   <!--========== SCROLL REVEAL ==========-->
