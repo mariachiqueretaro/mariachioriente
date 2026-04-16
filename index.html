@@ -383,6 +383,139 @@
       }
     }
 
+    /* ===== HERO SOCIAL MEDIA BUTTONS ===== */
+    .social-hero-section {
+      margin-top: 40px;
+      padding: 25px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      border: 2px solid rgba(255, 215, 0, 0.3);
+      animation: fadeInUp 1s ease 0.8s backwards;
+    }
+
+    .social-title {
+      color: var(--secondary);
+      font-size: 1.2em;
+      font-weight: 700;
+      margin-bottom: 20px;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .social-buttons-hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 15px;
+    }
+
+    .social-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 20px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.95em;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      color: white;
+      min-width: 140px;
+      justify-content: center;
+    }
+
+    .social-btn i {
+      font-size: 1.3em;
+    }
+
+    .social-btn.facebook {
+      background: linear-gradient(135deg, #1877F2 0%, #0d5cb6 100%);
+    }
+
+    .social-btn.facebook:hover {
+      transform: translateY(-5px) scale(1.05);
+      box-shadow: 0 10px 25px rgba(24, 119, 242, 0.5);
+    }
+
+    .social-btn.instagram {
+      background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    }
+
+    .social-btn.instagram:hover {
+      transform: translateY(-5px) scale(1.05);
+      box-shadow: 0 10px 25px rgba(220, 39, 67, 0.5);
+    }
+
+    .social-btn.tiktok {
+      background: linear-gradient(135deg, #000000 0%, #25F4EE 50%, #FE2C55 100%);
+    }
+
+    .social-btn.tiktok:hover {
+      transform: translateY(-5px) scale(1.05);
+      box-shadow: 0 10px 25px rgba(254, 44, 85, 0.5);
+    }
+
+    .social-btn.whatsapp-direct {
+      background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+    }
+
+    .social-btn.whatsapp-direct:hover {
+      transform: translateY(-5px) scale(1.05);
+      box-shadow: 0 10px 25px rgba(37, 211, 102, 0.5);
+    }
+
+    .social-subtitle {
+      color: white;
+      font-size: 0.95em;
+      text-align: center;
+      margin-top: 15px;
+      opacity: 0.9;
+    }
+
+    .social-subtitle i {
+      color: var(--secondary);
+      margin-right: 8px;
+      animation: bounce 2s infinite;
+    }
+
+    /* Animación especial para los botones */
+    @keyframes pulse-social {
+
+      0%,
+      100% {
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      50% {
+        box-shadow: 0 8px 25px rgba(255, 215, 0, 0.4);
+      }
+    }
+
+    .social-btn {
+      animation: pulse-social 3s infinite;
+    }
+
+    .social-btn:nth-child(2) {
+      animation-delay: 0.5s;
+    }
+
+    .social-btn:nth-child(3) {
+      animation-delay: 1s;
+    }
+
+    .social-btn:nth-child(4) {
+      animation-delay: 1.5s;
+    }
+
+    .social-btn:nth-child(5) {
+      animation-delay: 2s;
+    }
+
     /* ===== SECTIONS GENERAL ===== */
     section {
       padding: 80px 20px;
@@ -1042,6 +1175,26 @@
       .pricing-grid {
         grid-template-columns: 1fr;
       }
+
+      /* Responsive para móviles - Social Hero */
+      .social-hero-section {
+        padding: 20px 15px;
+        margin-top: 30px;
+      }
+
+      .social-buttons-hero {
+        gap: 10px;
+      }
+
+      .social-btn {
+        padding: 10px 15px;
+        font-size: 0.85em;
+        min-width: 120px;
+      }
+
+      .social-title {
+        font-size: 1em;
+      }
     }
 
     /* ===== LOADING ANIMATION ===== */
@@ -1129,17 +1282,40 @@
         Serenatas de amor, cumpleaños, bodas y eventos especiales en Marinilla, Guatapé,
         La Ceja y más. ¡Música en vivo que hace inolvidable tu celebración!
       </p>
-      <div class="cta-buttons">
-        <a href="https://wa.me/573012710046?text=Hola,%20quiero%20reservar%20una%20fecha%20para%20un%20evento"
-          class="btn btn-whatsapp" target="_blank" title="Contratar mariachi en Rionegro por WhatsApp">
-          <i class="fab fa-whatsapp"></i>
-          Reservar Mariachi por WhatsApp
-        </a>
-        <a href="#servicios" class="btn btn-secondary" title="Ver servicios de serenatas y eventos">
-          <i class="fas fa-play"></i>
-          Ver Servicios de Mariachi
-        </a>
+
+      <!-- 🔥 NUEVO: Botones de Redes Sociales - MÁS LLAMATIVOS 🔥 -->
+      <div class="social-hero-section" data-aos="fade-up" data-aos-delay="800">
+        <p class="social-title">¡Síguenos en nuestras redes sociales!</p>
+        <div class="social-buttons-hero">
+          <a href="https://www.facebook.com/mariachiqueretar/" target="_blank" class="social-btn facebook"
+            title="Síguenos en Facebook - Mariachi Querétaro">
+            <i class="fab fa-facebook-f"></i>
+            <span>Facebook</span>
+          </a>
+
+          <a href="https://www.instagram.com/mariachiqueretaro/profilecard/" target="_blank"
+            class="social-btn instagram" title="Síguenos en Instagram - Mariachi Querétaro">
+            <i class="fab fa-instagram"></i>
+            <span>Instagram</span>
+          </a>
+          <a href="https://www.tiktok.com/@mariachiqueretarocolomb" target="_blank" class="social-btn tiktok"
+            title="Síguenos en TikTok - Mariachi Querétaro">
+            <i class="fab fa-tiktok"></i>
+            <span>TikTok</span>
+          </a>
+          <a href="https://wa.me/573012710046" target="_blank" class="social-btn whatsapp-direct"
+            title="Escríbenos directo por WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+            <span>WhatsApp</span>
+          </a>
+        </div>
+        <p class="social-subtitle">
+          <i class="fas fa-music"></i>
+          ¡Mira nuestros videos, fotos de eventos y promociones especiales!
+        </p>
       </div>
+      <!-- 🔥 FIN: Botones de Redes Sociales 🔥 -->
+
     </div>
     <div class="scroll-indicator">
       <i class="fas fa-chevron-down"></i>
